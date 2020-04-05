@@ -8,4 +8,5 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 #### Features
 
 :heavy_check_mark: Game Reset
+
 :heavy_check_mark: Modo View Custom
