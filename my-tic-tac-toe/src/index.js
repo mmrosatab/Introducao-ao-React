@@ -12,6 +12,14 @@ function Square(props) {
   );
 }
 
+function Reset(props) {
+  return (
+    <button className="button-reset" >
+      Reset Game
+    </button>
+  );
+}
+
 class Board extends React.Component {
   renderSquare(i) {
     return (
@@ -95,6 +103,9 @@ class Game extends React.Component {
         <div className="game-info">
           <div>{status}</div>
           <ol>{/* TODO */}</ol>
+        </div>
+        <div>
+            <Reset/>
         </div>
       </div>
     );
