@@ -3,7 +3,7 @@
 Este repositório se destina ao desenvolvimento de um jogo da velha feito por meio do Tutorial: Introdução ao React do site oficial do Reactjs. O objeto da construção desta aplicação é sanar dúvidas e aprender fundamentos básica sobre Reactjs.
 
 
-:four_leaf_clover:  'Às vezes precisamos voltar uma casa para avançar duas.' - Autor desconhecido
+:four_leaf_clover:  *'Às vezes precisamos voltar uma casa para avançar duas.'* - Autor desconhecido
 
 ### Features
 
@@ -19,7 +19,7 @@ Quando houver mais de uma prop, coloque-as em linhas separadas isso melhorá a l
 
 ##### :memo: React Fundamentails
 
-O ***state*** é privado por isso utilizamos o 'this' para acessá-lo.
+O ***state*** é privado por isso utilizamos o **this** para acessá-lo.
 
 ##### :memo: Javascript
 
@@ -63,7 +63,7 @@ O ***state*** é privado por isso utilizamos o 'this' para acessá-lo.
 
   Strict mode
   
-  * Modo rigoroso de interpretar a linguagem javascript, que não permirte práticas não recomendadas em javascript. Ex:    criação de variáveis globais implícitas. Como usá-lo? Coloque a flag "use strict" no início/primeira linha do código para aplicar esse modo para todo o código ou adicione na primeira linha de uma função para aplicar o modo a está função e as demais funções chamadas dentro desta função.
+  * Modo rigoroso de interpretar a linguagem javascript, que não permirte práticas não recomendadas em javascript. Ex:    criação de variáveis globais implícitas. Como usá-lo? Coloque a flag **use strict** no início/primeira linha do código para aplicar esse modo para todo o código ou adicione na primeira linha de uma função para aplicar o modo a está função e as demais funções chamadas dentro desta função.
 
  Função de ***callback***????
  
