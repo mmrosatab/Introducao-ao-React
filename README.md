@@ -20,11 +20,11 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
  ##### React Fundamentails
 
-    - O ***state*** é privado por isso utilizamos o 'this' para acessá-lo.
+    - O *** state *** é privado por isso utilizamos o 'this' para acessá-lo.
     - 
  ##### Javascript
 
-    - Template strings ***(`${variavel}`)***
+    - Template strings *** (`${variavel}`) ***
       - Vantagens
         - Concatenar mais facilmente valores a strings.
             Ex:
