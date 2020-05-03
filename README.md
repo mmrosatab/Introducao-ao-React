@@ -11,6 +11,9 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
 :heavy_check_mark: Modo View Custom
 
+```
+var a = 1
+```
 
 #### Lessons Learning
 
@@ -24,7 +27,7 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
     - 
  ##### Javascript
 
-    - Template strings *** (`${variavel}`) ***
+    - Template strings ***(`${variavel}`)***
       - Vantagens
         - Concatenar mais facilmente valores a strings.
             Ex:
@@ -42,7 +45,7 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
     - Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
 
       * Ex:
-         ```javascript
+         ```
           const car = {
             rodas: 4,
             speed: 0,
