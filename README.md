@@ -11,17 +11,17 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
 :heavy_check_mark: Modo View Custom
 
-### :memo: Lessons Learning
+### Lessons Learning
 
-##### React Code Style 
+##### :memo: React Code Style 
 
 Quando houver mais de uma prop, coloque-as em linhas separadas isso melhorá a legibilidade do código.
 
-##### React Fundamentails
+##### :memo: React Fundamentails
 
 O ***state*** é privado por isso utilizamos o 'this' para acessá-lo.
 
-##### Javascript
+##### :memo: Javascript
 
   Template strings ***(`${variavel}`)***
 
