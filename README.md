@@ -5,13 +5,13 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
 :four_leaf_clover:  'Às vezes precisamos voltar uma casa para avançar duas.' - Autor desconhecido
 
-#### Features
+### Features
 
 :heavy_check_mark: Game Reset
 
 :heavy_check_mark: Modo View Custom
 
-#### Lessons Learning
+### Lessons Learning
 
  ##### React Code Style 
  
