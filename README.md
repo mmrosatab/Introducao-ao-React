@@ -23,7 +23,7 @@ O ***state*** é privado por isso utilizamos o **this** para acessá-lo.
 
 ##### :memo: Javascript
 
-  Template strings ***``${variavel}``***
+  Template strings `${variavel}`
 
   * Concatenar mais facilmente valores a strings.
     ```javascript
