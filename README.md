@@ -11,10 +11,6 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
 :heavy_check_mark: Modo View Custom
 
-```javascript
-var a = 1
-```
-
 #### Lessons Learning
 
  ##### React Code Style 
@@ -44,19 +40,19 @@ var a = 1
     - O ***this*** é chamado normalmente dentro de um método ou função
     - Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
 
-      * Ex:
-         ```
-          const car = {
-            rodas: 4,
-            speed: 0,
-            accelerate: function(){
-                this.speed += 1
-                alert(`Speed: ${this.speed}`)
-            }
-          } 
+* Ex:
+```javascript
+const car = {
+ rodas: 4,
+ speed: 0,
+ accelerate: function(){
+     this.speed += 1
+     alert(`Speed: ${this.speed}`)
+ }
+} 
 
-          car.accelerate() // 1
-          ```
+car.accelerate() // 1
+```
     - O ***this*** em escopo global referencia o objeto window.
     - strict mode
       - modo rigoroso de interpretar a linguagem javascript, que não permirte práticas não recomendadas em javascript. Ex: criação de variáveis globais implícitas. Como usá-lo? Coloque a flag "use strict" no início/primeira linha do código para aplicar esse modo para todo o código ou adicione na primeira linha de uma função para aplicar o modo a está função e as demais funções chamadas dentro desta função.
