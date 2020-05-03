@@ -14,15 +14,15 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
 #### Lessons Learning
 
- # React Code Style 
+ ##### React Code Style 
 
     - Quando houver mais de uma prop, coloque-as em linhas separadas isso melhorá a legibilidade do código.
 
- # React Fundamentails
+ ##### React Fundamentails
 
     - O state é privado por isso utilizamos o 'this' para acessá-lo.
     - 
- # Javascript
+ ##### Javascript
 
     - Template strings (`${variavel}`)
       - Vantagens
