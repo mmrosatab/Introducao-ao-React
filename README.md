@@ -11,7 +11,7 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
 :heavy_check_mark: Modo View Custom
 
-```
+```javascript
 var a = 1
 ```
 
