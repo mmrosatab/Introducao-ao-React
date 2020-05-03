@@ -41,9 +41,9 @@ O ***state*** é privado por isso utilizamos o **this** para acessá-lo.
     ```
   This
   
-  O ***this*** é utilizado como uma referência a um objeto presente no escopo corrente. 
-  O ***this*** é chamado normalmente dentro de um método ou função
-  Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
+  * O ***this*** é utilizado como uma referência a um objeto presente no escopo corrente. 
+  * O ***this*** é chamado normalmente dentro de um método ou função
+  * Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
 
   ```javascript
     const car = {
@@ -59,7 +59,7 @@ O ***state*** é privado por isso utilizamos o **this** para acessá-lo.
   ```
 
 
-  O ***this*** em escopo global referencia o objeto window.
+  * O ***this*** em escopo global referencia o objeto window.
 
   Strict mode
   
