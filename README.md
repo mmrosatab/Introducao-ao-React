@@ -20,11 +20,11 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
  ##### React Fundamentails
 
-    - O state é privado por isso utilizamos o 'this' para acessá-lo.
+    - O ***state*** é privado por isso utilizamos o 'this' para acessá-lo.
     - 
  ##### Javascript
 
-    - Template strings (`${variavel}`)
+    - Template strings ***(`${variavel}`)***
       - Vantagens
         - Concatenar mais facilmente valores a strings.
             Ex:
@@ -37,11 +37,12 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
               const msg = `Mais ${dias + 1} dias sem o crush!`
               msg // "Mais 91 dias sem o crush!"
  
-    - O 'this' é utilizado como uma referência a um objeto presente no escopo corrente. 
-    - O 'this'é chamado normalmente dentro de um método ou função
-    - Através do 'this' dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
+    - O ***this*** é utilizado como uma referência a um objeto presente no escopo corrente. 
+    - O ***this*** é chamado normalmente dentro de um método ou função
+    - Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
 
       * Ex:
+         ```javascript
           const car = {
             rodas: 4,
             speed: 0,
@@ -52,10 +53,11 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
           } 
 
           car.accelerate() // 1
-    - O 'this' em escopo global referencia o objeto window.
+          ```
+    - O ***this*** em escopo global referencia o objeto window.
     - strict mode
       - modo rigoroso de interpretar a linguagem javascript, que não permirte práticas não recomendadas em javascript. Ex: criação de variáveis globais implícitas. Como usá-lo? Coloque a flag "use strict" no início/primeira linha do código para aplicar esse modo para todo o código ou adicione na primeira linha de uma função para aplicar o modo a está função e as demais funções chamadas dentro desta função.
 
-    - Função de callback????
+    - Função de ***callback***????
             
-    - A função 'apply' permite pegar o contexto de um objeto. 
+    - A função ***apply*** permite pegar o contexto de um objeto. 
