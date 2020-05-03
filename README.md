@@ -23,43 +23,49 @@ O ***state*** é privado por isso utilizamos o 'this' para acessá-lo.
 
 ##### Javascript
 
-Template strings ***(`${variavel}`)***
+  Template strings ***(`${variavel}`)***
 
-* Concatenar mais facilmente valores a strings.
-```javascript
-const msg = `Mayara assistiu os ${112} episódios de Yu Yu Hakusho.`
-msg // Mayara assistiu os 112 episódios de Yu Yu Hakusho.
-```
-* Concatenar quebras de linhas sem precisar digitar o '\n', apenas dando 'enter' entre as strings.
+  * Concatenar mais facilmente valores a strings.
+    ```javascript
+    const msg = `Mayara assistiu os ${112} episódios de Yu Yu Hakusho.`
+    msg // Mayara assistiu os 112 episódios de Yu Yu Hakusho.
+    ```
+  * Concatenar quebras de linhas sem precisar digitar o '\n', apenas dando 'enter' entre as strings.
 
-* Criação de strings interpoladas. 
+  * Criação de strings interpoladas. 
 
-```javascript 
-const dias = 90
-const msg = `Mais ${dias + 1} dias sem o crush!`
-msg // "Mais 91 dias sem o crush!"
-```
+    ```javascript 
+    const dias = 90
+    const msg = `Mais ${dias + 1} dias sem o crush!`
+    msg // "Mais 91 dias sem o crush!"
+    ```
+  This
+  
+  O ***this*** é utilizado como uma referência a um objeto presente no escopo corrente. 
+  O ***this*** é chamado normalmente dentro de um método ou função
+  Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
 
-O ***this*** é utilizado como uma referência a um objeto presente no escopo corrente. 
-O ***this*** é chamado normalmente dentro de um método ou função
-Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
+  ```javascript
+    const car = {
+      rodas: 4,
+      speed: 0,
+      accelerate: function(){
+        this.speed += 1
+        alert(`Speed: ${this.speed}`)
+      }
+    } 
 
-```javascript
-const car = {
-rodas: 4,
-speed: 0,
-accelerate: function(){
-  this.speed += 1
-  alert(`Speed: ${this.speed}`)
-}
-} 
+  car.accelerate() // 1
+  ```
 
-car.accelerate() // 1
-```
 
-* O ***this*** em escopo global referencia o objeto window.
-* strict mode
-* modo rigoroso de interpretar a linguagem javascript, que não permirte práticas não recomendadas em javascript. Ex: criação de variáveis globais implícitas. Como usá-lo? Coloque a flag "use strict" no início/primeira linha do código para aplicar esse modo para todo o código ou adicione na primeira linha de uma função para aplicar o modo a está função e as demais funções chamadas dentro desta função.
+  O ***this*** em escopo global referencia o objeto window.
 
-* Função de ***callback***????
-* A função ***apply*** permite pegar o contexto de um objeto. 
+  Strict mode
+  
+  * Modo rigoroso de interpretar a linguagem javascript, que não permirte práticas não recomendadas em javascript. Ex:    criação de variáveis globais implícitas. Como usá-lo? Coloque a flag "use strict" no início/primeira linha do código para aplicar esse modo para todo o código ou adicione na primeira linha de uma função para aplicar o modo a está função e as demais funções chamadas dentro desta função.
+
+ Função de ***callback***????
+ 
+ Função apply
+  * A função ***apply*** permite pegar o contexto de um objeto. 
