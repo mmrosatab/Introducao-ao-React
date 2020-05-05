@@ -28,7 +28,7 @@ Convenção é usar nomes on[Event] para propriedades que representam eventos e 
 O ***state*** é privado por isso utilizamos o **this** para acessá-lo.
 O método ***setState*** atualiza este componente React e também todos os seus filhos de forma automática.
 
-Beneficios da immutabilidade
+Benefícios da immutabilidade
 
 	* Complexidade das features se tornarem bem mais simples.
 	* Manter o histórico do state.
