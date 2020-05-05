@@ -17,12 +17,29 @@ Este repositório se destina ao desenvolvimento de um jogo da velha feito por me
 
 Quando houver mais de uma prop, coloque-as em linhas separadas isso melhorá a legibilidade do código.
 
+Quebre o retorno do elemento em várias linhas para melhorar a legibilidade e adicione parênteses para que o JavaScript não insira ponto e virgula após o return e quebre o código.
+
+Convenção é usar nomes on[Event] para propriedades que representam eventos e handle[Event] para métodos que manipulam os eventos.
+
+***Componentes de função*** são aqueles contém um método render e **NÃO** possuem seu próprio state.
+
 ##### :memo: React Fundamentails
 
 O ***state*** é privado por isso utilizamos o **this** para acessá-lo.
+O método ***setState*** atualiza este componente React e também todos os seus filhos de forma automática.
+
+Beneficios da immutabilidade
+
+	* Complexidade das features se tornarem bem mais simples.
+	* Manter o histórico do state.
+	* Determinar Quando Re-renderizar no React.
 
 ##### :memo: Javascript
-
+  
+  Fill
+  
+  * O método fill muda todos os elementos em um array para o valor que foi passado como parâmetro.
+  
   Template strings `${variavel}`
 
   * Concatenar mais facilmente valores a strings.
