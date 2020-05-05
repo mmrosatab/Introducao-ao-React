@@ -86,3 +86,16 @@ Benefícios da immutabilidade
  
  Função apply
   * A função ***apply*** permite pegar o contexto de um objeto. 
+
+```javascript
+const person1 = { 
+  name: 'Mayara',
+  age: 27, 
+  message: function(){ 
+    console.log(`I'm ${this.name} and I'm ${this.age} years old`)
+  }
+} 
+const person2 = {name: 'Pandessa', age: 24} 
+person1.message() // I'm Mayara and I'm 27 years old
+person1.message.apply(person2) // I'm Pandessa and I'm 24 years old
+```
