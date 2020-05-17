@@ -1,10 +1,29 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import * as serviceWorker from './serviceWorker';
 
 class Board extends Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			squares: Array(9).fill(null)
+		};
+	}
+
 	renderSquare(i){
-		return <Square value={i}/>;
+		return (
+			<Square 
+				value={ this.state.squares[i] }
+				onClick={() => this.handleClick(i)}
+			/>
+		);
+	}
+
+	handleClick(i){
+		const square = this.state.squares.slice();
+		square[i] = 'x';
+		this.setState({ square: square });
 	}
 
 	render() {
@@ -34,17 +53,27 @@ class Board extends Component{
 }
 
 class Square extends Component{
+
+	constructor(props){
+		super(props);
+		this.state = {
+			value: null
+		};
+	}
+
 	render(){
 		return (
-			<button>
-				{this.props.value}
+			<button 
+				className='square' 
+				onClick={() => this.setState({value: 'X'})}
+			>
+				{this.state.value}
 			</button>
 		);
 	}
 }
 
-
-class Game extends React.Component {
+class Game extends Component {
 	render() {
 		return (
 			<div className="game">
@@ -61,6 +90,10 @@ class Game extends React.Component {
 }
 
 ReactDOM.render(
-	<Game />,
+	<React.StrictMode>
+		<Game />
+	</React.StrictMode>,
 	document.getElementById('root')
 );
+
+serviceWorker.unregister();

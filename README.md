@@ -1,9 +1,13 @@
 # Introducao-ao-React
 
-Este repositório se destina ao desenvolvimento de um jogo da velha feito por meio do Tutorial: Introdução ao React do site oficial do Reactjs. O objeto da construção desta aplicação é sanar dúvidas e aprender fundamentos básica sobre Reactjs.
+Este repositório se destina ao desenvolvimento de um jogo da velha feito por meio do Tutorial: Introdução ao React do site oficial do Reactjs. O objetivo da construção desta aplicação é sanar dúvidas e aprender fundamentos básicos sobre Reactjs.
 
 
 :four_leaf_clover:  *'Às vezes precisamos voltar uma casa para avançar duas.'* - Autor desconhecido
+
+### Execução
+
+Para executar a aplicação: `yarn start`
 
 ### Features
 
@@ -25,7 +29,7 @@ Convenção é usar nomes on[Event] para propriedades que representam eventos e 
 
 ##### :memo: React Fundamentails
 
-O ***state*** é privado por isso utilizamos o **this** para acessá-lo.
+O ***state*** é privado para componentes React por isso utilizamos o **this** para acessá-lo.
 O método ***setState*** atualiza este componente React e também todos os seus filhos de forma automática.
 
 Benefícios da immutabilidade
