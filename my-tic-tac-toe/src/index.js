@@ -7,8 +7,22 @@ class Board extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			squares: Array(9).fill(null)
+			squares: Array(9).fill(null),
+			xIsNext: true,
 		};
+	}
+
+	handleClick(i){
+		let squares = this.state.squares.slice();
+		if(calculaWinner(squares) || squares[i]){
+			return;
+		}
+		const { xIsNext } = this.state;
+		squares[i] = xIsNext ? 'X': 'O';
+		this.setState({ 
+			squares: squares,
+			xIsNext: !xIsNext
+		});
 	}
 
 	renderSquare(i){
@@ -20,14 +34,14 @@ class Board extends Component{
 		);
 	}
 
-	handleClick(i){
-		const square = this.state.squares.slice();
-		square[i] = 'x';
-		this.setState({ square: square });
-	}
-
 	render() {
-		const status = 'Next player: X';
+		const winner = calculaWinner(this.state.squares);
+		let status;
+		if(winner){
+			status = `Winner is ${ winner }`;
+		}else {
+			status = 'Next player: ' + (this.state.xIsNext ? 'X':'O');
+		}
 
 		return (
 			<div>
@@ -52,25 +66,36 @@ class Board extends Component{
 	}
 }
 
-class Square extends Component{
+function Square(props){
+	return (
+		<button 
+			className='square' 
+			onClick={props.onClick}
+		>
+			{props.value}
+		</button>
+	);
+}
 
-	constructor(props){
-		super(props);
-		this.state = {
-			value: null
-		};
-	}
+function calculaWinner(squares){
+	const lines = [
+		[0, 1, 2],
+		[3, 4, 5],
+		[6, 7, 8],
+		[0, 3, 6],
+		[1, 4, 7],
+		[2, 5, 8],
+		[0, 4, 8],
+		[2, 4, 6],
+	];
 
-	render(){
-		return (
-			<button 
-				className='square' 
-				onClick={() => this.setState({value: 'X'})}
-			>
-				{this.state.value}
-			</button>
-		);
+	for(let i = 0; i < lines.length; i++){
+		const [a,b,c] = lines[i];
+		if(squares[a] && squares[a] === squares[b] && squares[b] === squares[c]){
+			return squares[a]; 
+		}
 	}
+	return null; 
 }
 
 class Game extends Component {

@@ -1,49 +1,62 @@
-# Introducao-ao-React
+  # Introducao-ao-React
 
-Este repositório se destina ao desenvolvimento de um jogo da velha feito por meio do Tutorial: Introdução ao React do site oficial do Reactjs. O objetivo da construção desta aplicação é sanar dúvidas e aprender fundamentos básicos sobre Reactjs.
+  Este repositório se destina ao desenvolvimento de um jogo da velha feito por meio do Tutorial: Introdução ao React do site oficial do Reactjs. O objetivo da construção desta aplicação é sanar dúvidas e aprender fundamentos básicos sobre Reactjs.
 
 
-:four_leaf_clover:  *'Às vezes precisamos voltar uma casa para avançar duas.'* - Autor desconhecido
+  :four_leaf_clover:  *'Às vezes precisamos voltar uma casa para avançar duas.'* - Autor desconhecido
 
-### Execução
+  ### Execução
 
-Para executar a aplicação: `yarn start`
+  Para executar a aplicação: `yarn start`
 
-### Features
+  ### Features
 
-:heavy_check_mark: Game Reset
+  :heavy_check_mark: Game Reset
 
-:heavy_check_mark: Modo View Custom
+  :heavy_check_mark: Modo View Custom
 
-### Lessons Learning
+  ### Lessons Learning
 
-##### :memo: React Code Style 
+  ##### :memo: React Code Style 
 
-Quando houver mais de uma prop, coloque-as em linhas separadas isso melhorá a legibilidade do código.
+  Quando houver mais de uma prop, coloque-as em linhas separadas isso melhorá a legibilidade do código.
 
-Quebre o retorno do elemento em várias linhas para melhorar a legibilidade e adicione parênteses para que o JavaScript não insira ponto e virgula após o return e quebre o código.
+  Quebre o retorno do elemento em várias linhas para melhorar a legibilidade e adicione parênteses para que o JavaScript não insira ponto e virgula após o return e quebre o código.
 
-Convenção é usar nomes on[Event] para propriedades que representam eventos e handle[Event] para métodos que manipulam os eventos.
+  Convenção é usar nomes on[Event] para propriedades que representam eventos e handle[Event] para métodos que manipulam os eventos.
 
-***Componentes de função*** são aqueles contém um método render e **NÃO** possuem seu próprio state.
+  ***Componentes de função*** são aqueles contém método render e **NÃO** possuem seu próprio state.
 
-##### :memo: React Fundamentails
+  ##### :memo: React Fundamentails
 
-O ***state*** é privado para componentes React por isso utilizamos o **this** para acessá-lo.
-O método ***setState*** atualiza este componente React e também todos os seus filhos de forma automática.
+  O ***state*** é privado para componentes React por isso utilizamos o **this** para acessá-lo.
+  O método ***setState*** atualiza este componente React e também todos os seus filhos de forma automática.
 
-Benefícios da immutabilidade
+  Benefícios da immutabilidade
 
-	* Complexidade das features se tornarem bem mais simples.
-	* Manter o histórico do state.
-	* Determinar Quando Re-renderizar no React.
+  * Complexidade das features se tornarem bem mais simples.
+  * Manter o histórico do state. (IMPORTANTE)
+  * Determinar Quando Re-renderizar no React.
 
-##### :memo: Javascript
+  shouldComponentUpdate()
   
+  * Este método é chamado ANTES que um componente React seja atualizado, ou seja, quando novas props ou estados são recebidos.
+  
+  componentWillUnmount()
+  
+  * Este método é chamado ANTES que um componente React seja destruído e removido do DOM.
+
+  componentDidMount()
+
+  * Este método é chamado assim que um componente React é renderizado no DOM.
+
+
+  ##### :memo: Javascript
+
   Fill
-  
+
   * O método fill muda todos os elementos em um array para o valor que foi passado como parâmetro.
-  
+
   Template strings `${variavel}`
 
   * Concatenar mais facilmente valores a strings.
@@ -61,7 +74,7 @@ Benefícios da immutabilidade
     msg // "Mais 91 dias sem o crush!"
     ```
   This
-  
+
   * O ***this*** é utilizado como uma referência a um objeto presente no escopo corrente. 
   * O ***this*** é chamado normalmente dentro de um método ou função
   * Através do ***this*** dentro de uma função pode-se acessar o métodos e propriedades do objeto que invoca a função. 
@@ -83,23 +96,39 @@ Benefícios da immutabilidade
   * O ***this*** em escopo global referencia o objeto window.
 
   Strict mode
-  
+
   * Modo rigoroso de interpretar a linguagem javascript, que não permirte práticas não recomendadas em javascript. Ex:    criação de variáveis globais implícitas. Como usá-lo? Coloque a flag **use strict** no início/primeira linha do código para aplicar esse modo para todo o código ou adicione na primeira linha de uma função para aplicar o modo a está função e as demais funções chamadas dentro desta função.
 
- Função de ***callback***????
- 
- Função apply
-  * A função ***apply*** permite pegar o contexto de um objeto. 
+  Função de ***callback***????
 
-```javascript
-const person1 = { 
+  Função apply
+    * A função ***apply*** permite pegar o contexto de um objeto. 
+
+  ```javascript
+  const person1 = { 
   name: 'Mayara',
   age: 27, 
   message: function(){ 
     console.log(`I'm ${this.name} and I'm ${this.age} years old`)
   }
-} 
-const person2 = {name: 'Pandessa', age: 24} 
-person1.message() // I'm Mayara and I'm 27 years old
-person1.message.apply(person2) // I'm Pandessa and I'm 24 years old
-```
+  } 
+  const person2 = {name: 'Pandessa', age: 24} 
+  person1.message() // I'm Mayara and I'm 27 years old
+  person1.message.apply(person2) // I'm Pandessa and I'm 24 years old
+  ```
+  Função slice
+    * Retorna a cópia de um array mediante ao intervalos passado. Caso nenhum intervalo seja especificado no intervalo, será returnado a cópia do array completo.
+
+  ```javascript
+  const nums = [11,32,13]
+  console.log(nums.slice(1,3)) // [32,13] 
+  console.log(nums.slice()) // [11,32,13]
+  ```
+  
+  Atribuição via desestruturação (destructuring assignment)
+  ```javascript
+  const a, b;
+  [a, b] = [1, 2];
+  console.log(a); // 1
+  console.log(b); // 2
+  ```
